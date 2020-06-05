@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaUsuarios</class>
+ <widget class="QMainWindow" name="VentanaUsuarios">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>967</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Clientes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnAgregar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario.png&quot;);
+}
+
+QPushButton#btnEstado{
+		border-radius: 15px;
+		color: white;
+		font-family: 'Roboto';
+		font-size: 25px;
+		image: url(&quot;../Iconos/lista.png&quot;);
+}
+
+QPushButton#btnReporte {
+		border-radius: 15px;
+		color: white;
+		font-family: 'Roboto';
+		font-size: 25px;
+		image: url(&quot;../Iconos/bloc.png&quot;);
+}
+
+QGroupBox {
+	border-radius: 15px;
+	background-color: #A0D8D2;
+	font-family: 'Roboto';
+}
+
+QLineEdit {
+	background-color: white;
+	border-style: ouset;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px;
+	font: bold 14px;
+	min-width: 10em;
+	padding: 6px;
+}
+QTextEdit {
+		background-color: white;
+	border-style: outset;
+	border-width: 1px;
+	border-color: white;
+	border-radius: 10px;
+	font: bold 10px;
+	min-width: 10em;
+	padding:2px;
+}
+
+QPushButton#btnAgregar:hover {
+	background-color: #D3F9F8;
+}
+
+QPushButton#btnEstado:hover {
+		background-color: #D3F9F8;
+}
+
+QPushButton#btnReporte:hover {
+		background-color: #D3F9F8;
+}
+
+QLabel {
+	font-family: 'Roboto';
+	font-size: 14px;
+	border-style: inset;
+}
+
+QPushButton#btnAgregar_2 {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario2.png&quot;);
+}
+
+QPushButton#btnLimpiar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/limpiar.png&quot;);
+}
+
+QPushButton#btnCerrar_Agregar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+
+QPushButton#btnAgregar_2:hover {
+	background-color: green;
+}
+
+QPushButton#btnLimpiar:hover{
+	background-color: #B9FFFD
+}
+
+QPushButton#btnCerrar_Agregar:hover {
+	background-color: red;
+}
+
+QPushButton#btnCerrar_Estado{
+	border-radius: 15px;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+QPushButton#btnCerrar_Estado:hover {
+	background-color: red;
+}
+QPushButton#btnEliminar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario3.png&quot;);
+}
+QPushButton#btnRecargar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/archivo.png&quot;);
+}
+QPushButton#btnCerrar_Lista {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+QPushButton#btnAsignar{
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario4.png&quot;);
+}
+QPushButton#btnEliminar:hover{
+	background-color: red;
+}
+QPushButton#btnAgregar:hover {
+	background-color: #D3F9F8;
+}
+
+QPushButton#btnRecargar:hover {
+		background-color: #D3F9F8;
+}
+
+QPushButton#btnCerrar_Lista:hover {
+		background-color: red;
+}
+
+QTableWidget {
+	border-radius: 15px;
+	background-color: white;
+}
+
+QToolBox {
+	border-radius: 15px;
+	
+}
+QTabWidget {
+	border-radius: 15px;
+	background-color: white;
+	font-family: 'Roboto';
+	font-size: 15px;
+}
+
+QMenuBar {
+	borde-radius: 15px;
+	background-color:grey;
+}
+QAction {
+	background-color: white;
+}
+QMainWindow {
+		background-color: #009688;
+}
+QTabWidget {
+	border-size: 15px;
+	background-color: #009688;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_10">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="gbUsuarios">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btnAgregar">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Agregar un nuevo cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="btnReporte">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Generar un archivo con la lista de clientes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btnEstado">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ver lista de clientes registrados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QTabWidget" name="tabClientes">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tabAgregar">
+         <attribute name="title">
+          <string>Agregar</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblCI_RIF">
+                <property name="text">
+                 <string>CI/RIF</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leCI_RIF"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="lblNombre">
+                <property name="text">
+                 <string>Nombre</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="leNombre"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblApellido">
+                <property name="text">
+                 <string>Apellido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLineEdit" name="leCorreo"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="leApellido"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="lblCorreo">
+                <property name="text">
+                 <string>Correo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="leTelefono"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="lblTelefono">
+                <property name="text">
+                 <string>Telefono</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btnAgregar_2">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Agregar el nuevo cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btnLimpiar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Borrar lo escrito&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btnCerrar_Agregar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cerrar la pestaña agregar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabEstado">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <attribute name="title">
+          <string>Estado</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QLineEdit" name="leBuscar"/>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QTableWidget" name="tablaUsuarios"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btnEliminar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eliminar un cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btnRecargar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar la lista de clientes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btnCerrar_Estado">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cerrar la lista &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="mbUsuarios">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>967</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUsuarios">
+    <property name="title">
+     <string>Cientes</string>
+    </property>
+    <widget class="QMenu" name="menuReporte">
+     <property name="title">
+      <string>Reporte</string>
+     </property>
+     <addaction name="actionCSV"/>
+     <addaction name="actionPDF"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="actionAgregar_2"/>
+    <addaction name="actionEstado_2"/>
+    <addaction name="menuReporte"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir_2"/>
+   </widget>
+   <widget class="QMenu" name="menuInformacion">
+    <property name="title">
+     <string>Informacion</string>
+    </property>
+    <addaction name="actionAcercaDe"/>
+   </widget>
+   <addaction name="menuUsuarios"/>
+   <addaction name="menuInformacion"/>
+  </widget>
+  <widget class="QStatusBar" name="sbUsuarios"/>
+  <action name="actionAgregar">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionEstado">
+   <property name="text">
+    <string>Estado</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAcercaDe">
+   <property name="text">
+    <string>AcercaDe</string>
+   </property>
+  </action>
+  <action name="actionAgregar_2">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionEstado_2">
+   <property name="text">
+    <string>Estado</string>
+   </property>
+  </action>
+  <action name="actionSalir_2">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionCSV">
+   <property name="text">
+    <string>CSV</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="text">
+    <string>PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leTelefono</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leCorreo</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>385</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>566</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leNombre</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leApellido</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>414</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leCI_RIF</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

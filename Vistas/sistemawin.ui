@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sistemawin</class>
+ <widget class="QMainWindow" name="sistemawin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>187</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnClientes {
+	border-style: inset;
+	border-radius: 15px;
+	image: url(&quot;../Iconos/grupo-ico.png&quot;)
+}
+QPushButton#btnEmpleados {
+	border-radius: 15px;
+	image: url(&quot;../Iconos/empleados-ico.png&quot;)
+}
+
+QGroupBox {
+	border-radius: 15px;
+	background-color: #A0D8D2;
+	font-family: 'Roboto';
+}
+QPushButton#btnHabitaciones {
+	border-radius: 15px;
+	image: url(&quot;../Iconos/habitaciones-ico.png&quot;)
+}
+
+QPushButton#btnHotel {
+	border-radius: 15px;
+	image: url(&quot;../Iconos/hotel.png&quot;)
+}
+
+QPushButton#btnCLientes:hover{
+	backgroun-color: #30FDFB
+}
+
+QPushButton#btnHabitaciones:hover{
+	backgroun-color: #30FDFB
+}
+
+QPushButton#btnEmplados:hover{
+	backgroun-color: #30FDFB
+}
+
+QPushButton#btnHotel:hover{
+	backgroun-color: #30FDFB
+}
+
+QMainWindow {
+		background-color: #009688;
+}
+
+QMenuBar {
+	borde-radius: 15px;
+	background-color:grey;
+}
+QAction {
+	background-color: white;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="gbSistema">
+      <property name="title">
+       <string>Hotel</string>
+      </property>
+      <widget class="QPushButton" name="btnClientes">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>91</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Clientes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnEmpleados">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>30</y>
+         <width>91</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Empleados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnHabitaciones">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>91</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Habitaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnHotel">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>30</y>
+         <width>91</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hotel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="sbSistema"/>
+  <widget class="QMenuBar" name="mbSistema">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>447</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInformacion">
+    <property name="title">
+     <string>Información</string>
+    </property>
+    <addaction name="actionAcercaDe"/>
+   </widget>
+   <addaction name="menuInformacion"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="text">
+    <string>Guardar Como</string>
+   </property>
+  </action>
+  <action name="actionPDF">
+   <property name="text">
+    <string>PDF</string>
+   </property>
+  </action>
+  <action name="actionCSV">
+   <property name="text">
+    <string>CSV</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+  </action>
+  <action name="actionAcerca_De">
+   <property name="text">
+    <string>Acerca De</string>
+   </property>
+  </action>
+  <action name="actionAcercaDe">
+   <property name="text">
+    <string>AcercaDe</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

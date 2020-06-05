@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaHabitaciones</class>
+ <widget class="QMainWindow" name="VentanaHabitaciones">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnAsignar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/mas.png&quot;);
+}
+
+QPushButton#btnEstado {
+		border-radius: 15px;
+		color: white;
+		font-family: 'Roboto';
+		font-size: 25px;
+		image: url(&quot;../Iconos/lista.png&quot;);
+}
+
+QPushButton#btnAsignaciones {
+		border-radius: 15px;
+		color: white;
+		font-family: 'Roboto';
+		font-size: 25px;
+		image: url(&quot;../Iconos/lista2.png&quot;);
+}
+
+QGroupBox {
+	border-radius: 15px;
+	background-color: #A0D8D2;
+	font-family: 'Roboto';
+}
+
+QLineEdit {
+	background-color: white;
+	border-style: ouset;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px;
+	font: bold 14px;
+	min-width: 10em;
+	padding: 6px;
+}
+
+QPushButton#btnAsignar:hover {
+	background-color: #D3F9F8;
+}
+
+QPushButton#btnEstado:hover {
+		background-color: #D3F9F8;
+}
+
+QPushButton#btnAsignaciones:hover {
+		background-color: #D3F9F8;
+}
+
+QLabel {
+	font-family: 'Roboto';
+	font-size: 14px;
+	border-style: inset;
+}
+
+QPushButton#btnAsignar_2 {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario2.png&quot;);
+}
+
+QPushButton#btnLimpiar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/limpiar.png&quot;);
+}
+
+QPushButton#btnCerrar_Asignar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+
+QPushButton#btnAsignar_2:hover {
+	background-color: green;
+}
+
+QPushButton#btnLimpiar:hover{
+	background-color: #B9FFFD
+}
+
+QPushButton#btnCerrar_Asignar:hover {
+	background-color: red;
+}
+
+QPushButton#btnCerrar_Estado{
+	border-radius: 15px;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+QPushButton#btnCerrar_Estado:hover{
+	background-color: red;
+}
+QPushButton#btnEliminar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario3.png&quot;);
+}
+QPushButton#btnRecargar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/archivo.png&quot;);
+}
+QPushButton#btnCerrar_Lista {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+QPushButton#btnAsignar{
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/usuario4.png&quot;);
+}
+QPushButton#btnEliminar:hover{
+	background-color: red;
+}
+QPushButton#btnAsignar:hover {
+	background-color: green;
+}
+
+QPushButton#btnRecargar_Estado:hover {
+		background-color: #D3F9F8;
+}
+QPushButton#btnLimpiar:hover {
+		background-color: #D3F9F8;
+}
+QPushButton#btnCerrar_Estado:hover {
+		background-color: red;
+}
+QPushButton#btnCerrar_Asignar:hover {
+		background-color: red;
+}
+QTableWidget {
+	border-radius: 15px;
+	background-color: white;
+}
+
+QToolBox {
+	border-radius: 15px;
+	
+}
+QTabWidget {
+	border-radius: 15px;
+	background-color: white;
+	font-family: 'Roboto';
+	font-size: 15px;
+}
+
+QMenuBar {
+	borde-radius: 15px;
+	background-color:grey;
+}
+QAction {
+	background-color: white;
+}
+
+QPushButton#btnRecargar_Estado {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/archivo.png&quot;);
+}
+QPushButton#btnRecargar:hover {
+	background-color: #D3F9F8;
+}
+
+QPushButton#btnCerrar_Asignaciones {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+
+QPushButton#btnCerrar_Asignaciones:hover {
+	background-color: red;
+}
+QMainWindow {
+		background-color: #009688;
+}
+
+QTabWidget {
+ border-size: 15px;
+ background-color: #009688;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_22">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_20">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="gBHabitaciones">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btnAsignar">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Asignar una habitacion a un cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="btnEstado">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ver el listado de las habitaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="btnAsignaciones">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ver lista de las asignaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTabWidget" name="tabHabitaciones">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabAsignar">
+         <attribute name="title">
+          <string>Asignar</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblCI_RIF">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cedula o RIF del cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>CI/RIF</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="leCI_RIF"/>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="lblHabitacion">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Numero de la habitacion&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Habitacion</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLineEdit" name="leHabitacion"/>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblEntrada">
+                  <property name="whatsThis">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fecha en la que se le asigna la habitacion&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fecha Entrada</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QDateEdit" name="dateEntrada"/>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="lblSalida">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fecha de salida del cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Fecha Salida</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QDateEdit" name="dateSalida"/>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <layout class="QGridLayout" name="gridLayout_8">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblCostoDia">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Costo del Dia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Costo Dia</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="leCostoDia"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="gridLayout_10">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="btnAsignar_2">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Asigna una habitacion al cliente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="btnLimpiar">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Borrar todo lo escrito&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="btnCerrar_Asignar">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cierra la pestaña asignar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabEstado">
+         <attribute name="title">
+          <string>Estado</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_19">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tablaEstado"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="gridLayout_14">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lblGuardar">
+                  <property name="text">
+                   <string>Guardar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="cBGuardar">
+                  <item>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PDF</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CSV</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="4">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btnCerrar_Estado">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cierra la lista de las habitaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btnRecargar_Estado">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recargar la lista de las habitaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabAsignaciones">
+         <attribute name="title">
+          <string>Asignaciones</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_21">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_18">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="leBuscarAsignaciones">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {background yellow
+border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:0.1 rgba(255, 255, 255, 255), stop:0.2 rgba(255, 176, 176, 167), stop:0.3 rgba(255, 151, 151, 92), stop:0.4 rgba(255, 125, 125, 51), stop:0.5 rgba(255, 76, 76, 205), stop:0.52 rgba(255, 76, 76, 205), stop:0.6 rgba(255, 180, 180, 84), stop:1 rgba(255, 255, 255, 0))};</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QTableWidget" name="tablaAsignaciones"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btnEliminar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Elimina una asignacion&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btnRecargar">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualiza la lista de las asignaciones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btnCerrar_Asignaciones">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="mbHabitaciones">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHabitaciones">
+    <property name="title">
+     <string>Habitaciones</string>
+    </property>
+    <addaction name="actionAsignar"/>
+    <addaction name="actionEstado"/>
+    <addaction name="actionAsignaciones"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir_2"/>
+   </widget>
+   <widget class="QMenu" name="menuInformacion">
+    <property name="title">
+     <string>Informacion</string>
+    </property>
+    <addaction name="actionAcercaDe"/>
+   </widget>
+   <addaction name="menuHabitaciones"/>
+   <addaction name="menuInformacion"/>
+  </widget>
+  <widget class="QStatusBar" name="stHabitaciones"/>
+  <action name="actionAsignar">
+   <property name="text">
+    <string>Asignar</string>
+   </property>
+  </action>
+  <action name="actionEstado">
+   <property name="text">
+    <string>Estado</string>
+   </property>
+  </action>
+  <action name="actionAcercaDe">
+   <property name="text">
+    <string>AcercaDe</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAsignaciones">
+   <property name="text">
+    <string>Asignaciones</string>
+   </property>
+  </action>
+  <action name="actionSalir_2">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leCostoDia</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>dateEntrada</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>542</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>481</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>dateSalida</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>806</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leHabitacion</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>557</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>628</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLimpiar</sender>
+   <signal>clicked()</signal>
+   <receiver>leCI_RIF</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>403</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

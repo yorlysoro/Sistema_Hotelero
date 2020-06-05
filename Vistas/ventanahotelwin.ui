@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaHotel</class>
+ <widget class="QMainWindow" name="VentanaHotel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1042</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnCuentas {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/grafico.png&quot;);
+}
+
+QPushButton#btnClientes {
+		border-radius: 15px;
+		color: white;
+		font-family: 'Roboto';
+		font-size: 25px;
+		image: url(&quot;../Iconos/grafico-circular.png&quot;);
+}
+QGroupBox {
+	border-radius: 15px;
+	background-color: #A0D8D2;
+	font-family: 'Roboto';
+}
+
+QLineEdit {
+	background-color: white;
+	border-style: ouset;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px;
+	font: bold 14px;
+	min-width: 10em;
+	padding: 6px;
+}
+
+QPushButton#btnCuentas:hover {
+	background-color: #D3F9F8;
+}
+
+QPushButton#btnClientes:hover {
+		background-color: #D3F9F8;
+}
+
+
+QLabel {
+	font-family: 'Roboto';
+	font-size: 14px;
+	border-style: inset;
+}
+
+
+
+
+QPushButton#btnCerrar_Negocio{
+	border-radius: 15px;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+QPushButton#btnCerrar_Negocio:hover{
+	background-color: red;
+}
+
+QPushButton#btnCerrar_Cliente {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+
+
+QPushButton#btnCerrar_Cliente:hover {
+		background-color: red;
+}
+QTableWidget {
+	border-radius: 15px;
+	background-color: white;
+}
+
+QToolBox {
+	border-radius: 15px;
+	
+}
+QTabWidget {
+	border-radius: 15px;
+	background-color: white;
+	font-family: 'Roboto';
+	font-size: 15px;
+}
+
+QMenuBar {
+	borde-radius: 15px;
+	background-color:grey;
+}
+QAction {
+	background-color: white;
+}
+
+QMainWindow {
+		background-color: #009688;
+}
+QTabWidget {
+ border-size: 15px;
+ background-color: #009688;
+}
+
+QToolBox {
+	border-size: 15px;
+	 background-color: #009688;
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="gBHotel">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btnCuentas">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ver la cantidad de egresos e ingresos del dia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="btnClientes">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ver la cantidad de clientes que ingresan al hotel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTabWidget" name="tabHotel">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabCuentas">
+         <attribute name="title">
+          <string>Cuentas</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>201</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblGuardar">
+               <property name="text">
+                <string>Guardar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="cBGuardar">
+               <item>
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PDF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>CSV</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="QToolBox" name="tbNegocio">
+               <property name="currentIndex">
+                <number>1</number>
+               </property>
+               <widget class="QWidget" name="pIngresos">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>104</width>
+                  <height>45</height>
+                 </rect>
+                </property>
+                <attribute name="label">
+                 <string>Ingresos</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_7">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label">
+                     <property name="text">
+                      <string>Por</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="cBIngresos">
+                     <item>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dia</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mes</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Año</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pEgresos">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>197</width>
+                  <height>77</height>
+                 </rect>
+                </property>
+                <attribute name="label">
+                 <string>Egresos</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_15">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>Por</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="cBEgresos">
+                     <item>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dia</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mes</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Año</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="1">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="btnCerrar_Negocio">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cerrar la pestaña cuentas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="1">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QTableWidget" name="tablaCuentas">
+          <property name="geometry">
+           <rect>
+            <x>225</x>
+            <y>11</y>
+            <width>771</width>
+            <height>411</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabClientes">
+         <attribute name="title">
+          <string>Clientes</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>201</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblGuardar_2">
+               <property name="text">
+                <string>Guardar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="cBGuardar_2">
+               <item>
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PDF</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>CSV</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="QToolBox" name="tbClientes">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="pClientes">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>104</width>
+                  <height>45</height>
+                 </rect>
+                </property>
+                <attribute name="label">
+                 <string>Clientes</string>
+                </attribute>
+                <layout class="QGridLayout" name="gridLayout_10">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_9">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="lePor_Clientes">
+                     <property name="text">
+                      <string>Por</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="cBClientes">
+                     <item>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dia</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mes</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Año</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_13">
+             <item row="0" column="1">
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="btnCerrar_Cliente">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cerrar la pestaña clientes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="1">
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QTableWidget" name="tablaClientes">
+          <property name="geometry">
+           <rect>
+            <x>225</x>
+            <y>11</y>
+            <width>771</width>
+            <height>411</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="sbHotel"/>
+  <widget class="QMenuBar" name="mbHotel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1042</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHotel">
+    <property name="title">
+     <string>Hotel</string>
+    </property>
+    <addaction name="actionCuentas"/>
+    <addaction name="actionClientes"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuInformacion">
+    <property name="title">
+     <string>Informacion</string>
+    </property>
+    <addaction name="actionAcercaDe"/>
+   </widget>
+   <addaction name="menuHotel"/>
+   <addaction name="menuInformacion"/>
+  </widget>
+  <action name="actionCuentas">
+   <property name="text">
+    <string>Cuentas</string>
+   </property>
+  </action>
+  <action name="actionClientes">
+   <property name="text">
+    <string>Clientes</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAcercaDe">
+   <property name="text">
+    <string>AcercaDe</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

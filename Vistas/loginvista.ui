@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loginWin</class>
+ <widget class="QMainWindow" name="loginWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>366</width>
+    <height>131</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ingreso al Sistema</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+	background-color: white;
+	border-style: outset;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px;
+	font: bold 14px;
+	min-width: 10em;
+	padding: 6px;
+}
+
+QPushButton#btnSalir {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/cancelar.png&quot;);
+}
+
+QMainWindow#loginWin {
+		background-color: #009688;
+}
+QLabel{
+		font-family: 'Roboto';
+}
+
+QPushButton#btnIngresar {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/aceptar-ico.png&quot;);
+}
+QPushButton#btnAcercaDe {
+	border-radius: 15px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 25px;
+	image: url(&quot;../Iconos/estrella.png&quot;);
+}
+
+QPushButton#btnIngresar:hover {
+	background-color: green;
+}
+QPushButton#btnAcercaDe:hover {
+	background-color: yellow;
+}
+
+QPushButton#btnSalir:hover {
+	background-color: red;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lblUsuario">
+          <property name="text">
+           <string>Usuario</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="leUsuario"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblContrasena">
+          <property name="text">
+           <string>Contraseña</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="leContrasena">
+          <property name="inputMethodHints">
+           <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btnSalir">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cerrar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="btnIngresar">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ingresar al sistema&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="btnAcercaDe">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Acerca del programa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSalir</sender>
+   <signal>clicked()</signal>
+   <receiver>loginWin</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
